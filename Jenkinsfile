@@ -20,5 +20,13 @@ pipeline {
                 '''
             }
         }
+        stage('Test stage'){
+            steps{
+                echo 'Testing the new laptop ...'
+                sh '''
+                    test -f build/public/index.html
+                '''
+            }
+        }
     }
 }
