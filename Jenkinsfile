@@ -20,7 +20,7 @@ pipeline {
                 '''
             }
         }
-        stage('Test stage'){
+        stage('Test'){
             steps{
                 echo 'Testing the new laptop ...'
                 sh '''
